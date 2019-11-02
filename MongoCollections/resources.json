@@ -1,0 +1,66 @@
+{ 
+    "_id" : ObjectId("54eee4b0b18cdd3005294991"), 
+    "title" : "Pipelines", 
+    "url" : "http://localhost:3000/#/applications/123/pipeline/123", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("54ef21dd5c72404c15a3d3e9"), 
+    "title" : "Dashboards", 
+    "url" : "http://localhost:3000/#/applications/123/dashboard/123", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("561013048945d11009543d07"), 
+    "title" : "Monitoring", 
+    "url" : "Monitoring", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5610132c8945d11009543d08"), 
+    "title" : "Deployment", 
+    "url" : "Deployment", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5610134a8945d11009543d09"), 
+    "title" : "Data Discovery", 
+    "url" : "Data Discovery", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("561013718945d11009543d0a"), 
+    "title" : "Models Dashboard", 
+    "url" : "Models Dashboard", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a79573ca0ae51fa4140f257"), 
+    "title" : "API Dashboard", 
+    "url" : "API Dashboard", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a795792a0ae51fa4140f25c"), 
+    "title" : "Data Management", 
+    "url" : "Data Management", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a795939a0ae51fa4140f25f"), 
+    "title" : "Projects", 
+    "url" : "Projects", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5aa26b73c3badd3bd4e843da"), 
+    "title" : "User Management", 
+    "url" : "User Management", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5c41aeab86209397ec340684"), 
+    "title" : "Administration", 
+    "url" : "Administration", 
+    "__v" : NumberInt(0)
+}

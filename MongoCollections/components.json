@@ -1,0 +1,294 @@
+{ 
+    "_id" : ObjectId("5d4bc63a0dfbfadd404bcda7"), 
+    "name" : "dbfs-source", 
+    "label" : "DBFS", 
+    "type" : "source", 
+    "facets" : {
+
+    }, 
+    "section_id" : ObjectId("5a98f1737334e13120b0ccbb"), 
+    "stage_attributes" : {
+        "url" : "", 
+        "file_type" : "Delimeted", 
+        "dbfs_token" : "", 
+        "dbfs_domain" : "", 
+        "delimiter" : ",", 
+        "is_header" : "Use Header Line"
+    }
+}
+{ 
+    "_id" : ObjectId("5d4bcaf3bec4405df1d9cb19"), 
+    "name" : "cosmos-source", 
+    "label" : "cosmosDB", 
+    "type" : "source", 
+    "facets" : {
+
+    }, 
+    "section_id" : ObjectId("5a98f1737334e13120b0ccbb"), 
+    "stage_attributes" : {
+        "query" : "", 
+        "Endpoint" : "", 
+        "Database" : "", 
+        "Collection" : "", 
+        "Masterkey" : "", 
+        "upsert" : true
+    }
+}
+{ 
+    "_id" : ObjectId("5d4bcb90bec4405df1d9cb1a"), 
+    "name" : "blob-source", 
+    "label" : "BlobStorage", 
+    "type" : "source", 
+    "facets" : {
+
+    }, 
+    "section_id" : ObjectId("5a98f1737334e13120b0ccbb"), 
+    "stage_attributes" : {
+        "url" : "", 
+        "file_type" : "", 
+        "accountname" : "", 
+        "accountkey" : "", 
+        "containername" : "", 
+        "blobname" : "", 
+        "delimiter" : "", 
+        "is_header" : ""
+    }
+}
+{ 
+    "_id" : ObjectId("5d4bcc1cbec4405df1d9cb1b"), 
+    "name" : "feature-transformation-A", 
+    "label" : "Feature", 
+    "type" : "transformation", 
+    "facets" : {
+
+    }, 
+    "section_id" : ObjectId("5a98f1587334e13120b0ccb8"), 
+    "stage_attributes" : {
+        "AutoFE" : {
+            "autoFE_flag" : true
+        }, 
+        "ManualFE" : {
+            "FE" : [
+
+            ]
+        }, 
+        "selectedFE" : [
+
+        ], 
+        "autoFE_flag" : true
+    }
+}
+{ 
+    "_id" : ObjectId("5d4bcce3bec4405df1d9cb1c"), 
+    "name" : "bottom", 
+    "label" : "Bottom", 
+    "type" : "transformation", 
+    "facets" : {
+
+    }, 
+    "section_id" : ObjectId("5a98f1587334e13120b0ccb8"), 
+    "stage_attributes" : {
+        "attributes" : {
+            "topResults" : 0.0, 
+            "dataType" : "", 
+            "columnName" : ""
+        }, 
+        "parameter" : false, 
+        "stage_id" : ""
+    }
+}
+{ 
+    "_id" : ObjectId("5d4bce5abec4405df1d9cb1e"), 
+    "name" : "aggregation", 
+    "label" : "Aggregation", 
+    "type" : "transformation", 
+    "facets" : {
+
+    }, 
+    "section_id" : ObjectId("5a98f1587334e13120b0ccb8"), 
+    "stage_attributes" : {
+        "group_by" : [
+
+        ], 
+        "aggregate_on" : [
+
+        ]
+    }
+}
+{ 
+    "_id" : ObjectId("5d4bced0bec4405df1d9cb1f"), 
+    "name" : "top", 
+    "label" : "Top", 
+    "type" : "transformation", 
+    "facets" : {
+
+    }, 
+    "section_id" : ObjectId("5a98f1587334e13120b0ccb8"), 
+    "stage_attributes" : {
+        "stage_id" : "", 
+        "parameter" : false, 
+        "attributes" : {
+            "values" : 0.0, 
+            "columnName" : ""
+        }
+    }
+}
+{ 
+    "_id" : ObjectId("5d4bcf49bec4405df1d9cb20"), 
+    "name" : "query", 
+    "label" : "Query", 
+    "type" : "transformation", 
+    "facets" : {
+
+    }, 
+    "section_id" : ObjectId("5a98f1587334e13120b0ccb8"), 
+    "stage_attributes" : {
+        "query" : ""
+    }
+}
+{ 
+    "_id" : ObjectId("5d4bcf95bec4405df1d9cb21"), 
+    "name" : "filter", 
+    "label" : "Filter", 
+    "type" : "transformation", 
+    "facets" : {
+
+    }, 
+    "section_id" : ObjectId("5a98f1587334e13120b0ccb8"), 
+    "stage_attributes" : {
+        "regex" : [
+
+        ], 
+        "use_regex" : false, 
+        "expression" : [
+            {
+                "column1_name" : "", 
+                "operator" : "", 
+                "column2_name" : "", 
+                "custom" : false, 
+                "custom_value" : "", 
+                "value_type" : "", 
+                "combinator" : "", 
+                "showOptions" : true
+            }
+        ], 
+        "use_expression" : true
+    }
+}
+{ 
+    "_id" : ObjectId("5d4bcfffbec4405df1d9cb22"), 
+    "name" : "formula", 
+    "label" : "Formula", 
+    "type" : "transformation", 
+    "facets" : {
+
+    }, 
+    "section_id" : ObjectId("5a98f1587334e13120b0ccb8"), 
+    "stage_attributes" : {
+        "formula" : "", 
+        "output_fields" : {
+            "alias" : "", 
+            "field" : "", 
+            "checked" : true, 
+            "absolute" : true
+        }, 
+        "expression" : [
+
+        ], 
+        "use_expression" : true
+    }
+}
+{ 
+    "_id" : ObjectId("5d4bd045bec4405df1d9cb23"), 
+    "name" : "join-1", 
+    "label" : "Join", 
+    "type" : "transformation", 
+    "facets" : {
+
+    }, 
+    "section_id" : ObjectId("5a98f1587334e13120b0ccb8"), 
+    "stage_attributes" : {
+        "user_comment" : "", 
+        "stageB" : "", 
+        "stageA" : "", 
+        "keys" : [
+
+        ], 
+        "join_type" : ""
+    }
+}
+{ 
+    "_id" : ObjectId("5d4bd0b9bec4405df1d9cb24"), 
+    "name" : "tpot", 
+    "label" : "Automl", 
+    "type" : "ml", 
+    "facets" : {
+
+    }, 
+    "section_id" : ObjectId("5a8e720822a8792610ae8c1a"), 
+    "stage_attributes" : {
+        "model_type" : "classification", 
+        "label" : "", 
+        "features" : [
+
+        ], 
+        "percentage" : "10", 
+        "executionTime" : "5"
+    }
+}
+{ 
+    "_id" : ObjectId("5d4bd199bec4405df1d9cb25"), 
+    "name" : "cosmos-sink", 
+    "label" : "CosmosDB", 
+    "type" : "sink", 
+    "facets" : {
+
+    }, 
+    "section_id" : ObjectId("5a8e715222a8792610ae8c19"), 
+    "stage_attributes" : {
+        "query" : "", 
+        "Endpoint" : "", 
+        "Database" : "", 
+        "Collection" : "", 
+        "Masterkey" : "", 
+        "upsert" : true
+    }
+}
+{ 
+    "_id" : ObjectId("5d4bd292bec4405df1d9cb29"), 
+    "name" : "dbfs-sink", 
+    "label" : "DBFS", 
+    "type" : "sink", 
+    "facets" : {
+
+    }, 
+    "section_id" : ObjectId("5a8e715222a8792610ae8c19"), 
+    "stage_attributes" : {
+        "url" : "", 
+        "delimiter" : "", 
+        "file_type" : "", 
+        "dbfs_token" : "", 
+        "dbfs_domain" : "", 
+        "is_header" : "Use Header Line"
+    }
+}
+{ 
+    "_id" : ObjectId("5d4bd2eebec4405df1d9cb2a"), 
+    "name" : "blob-sink", 
+    "label" : "BlobStorage", 
+    "type" : "sink", 
+    "facets" : {
+
+    }, 
+    "section_id" : ObjectId("5a8e715222a8792610ae8c19"), 
+    "stage_attributes" : {
+        "url" : "", 
+        "file_type" : "", 
+        "accountname" : "", 
+        "accountkey" : "", 
+        "containername" : "", 
+        "blobname" : "", 
+        "delimiter" : "", 
+        "is_header" : "Use Header Line"
+    }
+}
