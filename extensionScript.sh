@@ -13,7 +13,7 @@ echo "export COSMOS_DB=$dbName" >> /etc/profile
 
 cd /numtraPlatform/numtraplatformv2/libraryPackages
 
-wget "https://numtrastorage.blob.core.windows.net/backendfiles/NumtraBackend-v2_1.6.0_Dev_deployment-py3.6.egg?st=2019-11-07T10%3A25%3A00Z&se=2019-12-09T10%3A25%3A00Z&sp=rl&sv=2018-03-28&sr=b&sig=D77Pa8b%2BQk4%2FKaEjnu2U93i9Vw3wmH5MVgzCtIkZ934%3D" -k -O NumtraBackend.egg
+wget "https://numtrastorage.blob.core.windows.net/backendfiles/NumtraBackend-v2_1.1.7_merge_with_dev_marketplace-py3.6.egg?st=2019-11-12T13%3A57%3A00Z&se=2019-12-14T13%3A57%3A00Z&sp=rl&sv=2018-03-28&sr=b&sig=ULtLQlv9C25VuZLjwJzj0fpTyGtfqniqAvqrz2ivKqU%3D" -k -O NumtraBackend.egg
 wget "https://numtrastorage.blob.core.windows.net/backendfiles/TPOT_1.4.DepDev-0.10.1-py3.6.egg?st=2019-11-07T10%3A29%3A00Z&se=2019-12-09T10%3A29%3A00Z&sp=rl&sv=2018-03-28&sr=b&sig=afO%2Be7zcuRBSWxH5PldvE219rMSfeu0I5uAgJVEOgxs%3D" -k -O TPOT.egg
 
 # curl https://raw.githubusercontent.com/Zeshan-dev/vmExtensoinScript/master/MongoCollections/components.json# >> components.json
