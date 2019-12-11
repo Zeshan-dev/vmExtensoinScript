@@ -10,7 +10,7 @@ sed -i '/mongoStorageSas/d' /etc/profile
 
 echo "export mlflowWorkspaceName=$mlflowWorkspaceName" >> /etc/profile
 echo "export mongoStorageUri=$storageAccountUri" >> /etc/profile
-echo "export mongoStorageSas=$storageAccountSas" >> /etc/profile
+echo "export mongoStorageSas=\"$storageAccountSas\"" >> /etc/profile
 
 cd /numtraPlatform/numtraplatformv2/libraryPackages
 
