@@ -8,7 +8,7 @@ sed -i '/mlflowWorkspaceName/d' /etc/profile
 sed -i '/mongoStorageUri/d' /etc/profile
 sed -i '/mongoStorageSas/d' /etc/profile
 
-echo "export mlflowWorkspaceName=$mlflowWorkspaceName" >> /etc/profile
+echo "export mlflow_workspace=$mlflowWorkspaceName" >> /etc/profile
 echo "export mongoStorageUri=$storageAccountUri" >> /etc/profile
 echo "export mongoStorageSas=\"$storageAccountSas\"" >> /etc/profile
 
