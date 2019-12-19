@@ -13,6 +13,7 @@ echo "export mlflow_workspace=$mlflowWorkspaceName" >> /etc/profile
 echo "export MLFLOWWORKSPACE=$mlflowWorkspaceName" >> /etc/profile
 echo "export mongoStorageUri=$storageAccountUri" >> /etc/profile
 echo "export mongoStorageSas=\"$storageAccountSas\"" >> /etc/profile
+echo "export STORAGESAS=\"$storageAccountSas\"" >> /etc/profile
 
 cd /numtraPlatform/numtraplatformv2/libraryPackages
 
