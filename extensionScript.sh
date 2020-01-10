@@ -11,3 +11,5 @@ sed -i '/mongoStorageSas/d' /etc/profile
 echo "export mlflow_workspace=$mlflowWorkspaceName" >> /etc/profile
 echo "export mongoStorageUri=$storageAccountUri" >> /etc/profile
 echo "export mongoStorageSas=\"$storageAccountSas\"" >> /etc/profile
+
+echo "{\"username\": \"${4}\", \"email\": \"${5}\", \"country\": \"${6}\"}" >> /numtraPlatform/userinfo.json
